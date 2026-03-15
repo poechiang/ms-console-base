@@ -1,0 +1,21 @@
+@import url(./assets/styles/reset.less);
+:root {
+  --lnk-color: #646cff;
+
+  &:not([theme-dark]) {
+    --base-color: rgba(0, 0, 0, 0.87);
+    --base-bg: #f6f7f9;
+    --btn-color-bg: #ffffff;
+    --btn-color-hover: #535bf2;
+    --lnk-color-hover: #535bf2;
+  }
+  @media (prefers-color-scheme: dark) {
+    &:not([theme-light]) {
+      --base-color: rgba(255, 255, 255, 0.87);
+      --base-bg: #1a1a1a;
+      --btn-color-bg: #242424;
+      --btn-color-hover: #747bff;
+      --lnk-color-hover: #747bff;
+    }
+  }
+}
